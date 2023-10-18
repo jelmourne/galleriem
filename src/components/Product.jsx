@@ -1,23 +1,34 @@
+/* eslint-disable react/prop-types */
 import "../index.css";
 import { useState } from "react";
-function Product() {
+function Product(props) {
   const [heart, setHeart] = useState(false);
+  const [like, setLike] = useState(parseInt(props.likes));
 
   return (
-    <div className="flex flex-col items-center bg-blue-900 w-1/6 h-96">
-      <p>Product tile</p>
-      <div className="flex w-10/12 h-5/6">
-        <img
-          className="absolute z-50"
-          src={heart}
-          onClick={() => {
-            console.log("test");
-          }}
-        ></img>
-        <img src="https://images.pexels.com/photos/1054666/pexels-photo-1054666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></img>
+    <div className="flex flex-col w-1/6 h-96 m-3">
+      <p className="flex justify-center">{props.product}</p>
+      <div className="flex w-full h-5/6 relative">
+        <div className="absolute right-0 z-50 flex items-end">
+          <p>{like}&nbsp; </p>
+          <img
+            src={heart == false ? "/Heart.svg" : "/Heart.svg"}
+            onClick={() => {
+              if (heart === false) {
+                setHeart(true);
+                setLike(like + 1);
+              } else {
+                setHeart(false);
+                setLike(like - 1);
+              }
+            }}
+          ></img>
+        </div>
+        <img src={props.image}></img>
       </div>
-      <div className="flex">
-        <div></div>
+      <div className="flex justify-between">
+        <div>{props.color}</div>
+        <p>${props.price}</p>
       </div>
     </div>
   );
