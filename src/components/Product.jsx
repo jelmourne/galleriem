@@ -12,7 +12,7 @@ function Product(props) {
         <div className="absolute right-0 z-50 flex items-end">
           <p>{like}&nbsp; </p>
           <img
-            src={heart == false ? "/Heart.svg" : "/Heart.svg"}
+            src={heart == false ? "/Heart.svg" : "/HeartFilled.svg"}
             onClick={() => {
               if (heart === false) {
                 setHeart(true);
