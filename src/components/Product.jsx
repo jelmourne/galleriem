@@ -14,7 +14,7 @@ function Product(props) {
   }, [button]);
 
   return (
-    <div className="flex flex-col w-1/6 h-96 m-3">
+    <div className="flex flex-col w-1/6 h-96">
       <p className="flex justify-center">{props.product}</p>
       <div
         className="flex w-full h-5/6 relative"

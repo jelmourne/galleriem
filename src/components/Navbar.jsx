@@ -22,7 +22,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="flex justify-between">
-          <img className="w-5/12 inline-flex" src="./Basket.svg"></img> Cart
+          <Link to={"/Cart"} className="flex justify-between">
+            <img className="w-5/12 inline-flex" src="./Basket.svg"></img> Cart
+          </Link>
         </li>
       </ul>
     </nav>
