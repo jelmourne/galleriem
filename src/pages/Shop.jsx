@@ -12,7 +12,7 @@ function Home() {
       <div className="bg-primary"></div>
       <Product
         product="Shirt"
-        image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1920px-Image_created_with_a_mobile_phone.png"
+        image="https://img.freepik.com/free-vector/white-product-podium-with-green-tropical-palm-leaves-golden-round-arch-green-wall_87521-3023.jpg?size=626&ext=jpg&ga=GA1.1.867424154.1698019200&semt=sph"
         likes="2"
         color="blue"
         price="59.99"
