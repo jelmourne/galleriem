@@ -1,20 +1,13 @@
 /* eslint-disable react/prop-types */
 import "../index.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 function Product(props) {
   const [heart, setHeart] = useState(false);
   const [like, setLike] = useState(parseInt(props.likes));
   const [button, setButton] = useState(false);
 
-  useEffect(() => {
-    const addButton = document.getElementById("addButton");
-    button == false
-      ? (addButton.style.display = "none")
-      : (addButton.style.display = "flex");
-  }, [button]);
-
   return (
-    <div className="flex flex-col w-1/6 h-96">
+    <div className="flex flex-col w-1/6 h-96 m-3">
       <p className="flex justify-center">{props.product}</p>
       <div
         className="flex w-full h-5/6 relative"
@@ -44,7 +37,7 @@ function Product(props) {
         <img src={props.image}></img>
         <div className="absolute right-5 z-50 flex bottom-5">
           <button
-            id="addButton"
+            style={button == false ? { display: "none" } : { display: "flex" }}
             className="justify-center items-center bg-black rounded-full h-10 w-10"
           >
             <input type="image" className="m-4" src="/Add.svg" />
