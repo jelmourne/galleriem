@@ -34,7 +34,7 @@ function Product(props) {
             }}
           ></img>
         </div>
-        <img src={props.image}></img>
+        <img className="aspect-square object-cover" src={props.image}></img>
         <div className="absolute right-5 z-50 flex bottom-5">
           <button
             style={button == false ? { display: "none" } : { display: "flex" }}

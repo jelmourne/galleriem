@@ -26,10 +26,10 @@ function Admin() {
           Orders
         </div>
         <div className="flex flex-col w-1/3 ">
-          <div className="h-1/2 m-3 rounded-xl shadow-xl border">
+          <div className="h-2/3 m-3 rounded-xl shadow-xl border">
             <AddProduct />
           </div>
-          <div className=" h-1/2 m-3 rounded-xl shadow-xl border">
+          <div className=" h-1/3 m-3 rounded-xl shadow-xl border">
             Product Search
           </div>
         </div>
