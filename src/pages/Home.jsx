@@ -2,6 +2,7 @@ import "../index.css";
 import Navbar from "../components/Navbar";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -32,9 +33,15 @@ function Home() {
             bachelor/bachelorettes, anniversaries & more!
           </p>
         </div>
-        <div className="p-10 flex justify-center">
-          <div className="text-4xl text-green border-b-2 border-black w-1/3 text-center border-opacity-30">
+        <div className="p-10 flex justify-center items-center">
+          <div className="text-4xl border-separate pb-3 text-green border-b-2 border-black w-1/3 text-center border-opacity-30">
             Gallery
+          </div>
+          <div className="flex items-center">
+            <p>View More</p>
+            <Link to={"/Gallery"}>
+              <img className="h-6" src="./Link.svg"></img>
+            </Link>
           </div>
         </div>
       </div>
