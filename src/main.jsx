@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
+import Admin from "./pages/Admin";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
