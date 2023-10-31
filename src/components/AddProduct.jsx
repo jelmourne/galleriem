@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function AddProduct() {
   const [colors, setColors] = useState([]);
@@ -7,21 +7,25 @@ function AddProduct() {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <img className="h-56 aspect-square object-cover" id="productImg"></img>
-      <input type="text" className="w-2/3" placeholder="Product Name"></input>
+      <input
+        type="text"
+        className="w-2/3 my-1"
+        placeholder="Product Name"
+      ></input>
       <input
         type="number"
-        className="w-2/3"
+        className="w-2/3 my-1"
         min="0.01"
         step="0.01"
         placeholder="Price"
       ></input>
       <textarea
         placeholder="Description"
-        className="resize-none rounded-md w-2/3"
+        className="resize-none rounded-md w-2/3 my-1"
       ></textarea>
       <div className="flex w-full justify-around">
         <div className="flex flex-col">
-          <div className="flex">
+          <div className="flex items-center">
             <p>Toggle Product Size</p>
             <input type="checkbox"></input>
           </div>
@@ -52,6 +56,7 @@ function AddProduct() {
       </div>
       <input
         type="file"
+        className="w-full"
         accept="image/png, image/jpeg"
         onChange={(e) => {
           const img = e.target.files[0];
@@ -61,7 +66,11 @@ function AddProduct() {
           }
         }}
       ></input>
-      <input type="submit" value="Add Product"></input>
+      <input
+        type="submit"
+        className="bg-black text-white p-2 rounded-lg hover:cursor-pointer active:hover:scale-95"
+        value="Add Product"
+      ></input>
     </div>
   );
 }
