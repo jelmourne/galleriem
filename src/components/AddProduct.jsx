@@ -6,27 +6,30 @@ function AddProduct() {
 
   return (
     <div className="flex flex-col justify-center items-center h-full">
-      <img className="h-56 aspect-square object-cover" id="productImg"></img>
+      <img
+        className="h-56 aspect-square object-cover m-3"
+        id="productImg"
+      ></img>
       <input
         type="text"
-        className="w-2/3 my-1"
+        className="w-2/3 my-2"
         placeholder="Product Name"
       ></input>
       <input
         type="number"
-        className="w-2/3 my-1"
+        className="w-2/3 my-2"
         min="0.01"
         step="0.01"
         placeholder="Price"
       ></input>
       <textarea
         placeholder="Description"
-        className="resize-none rounded-md w-2/3 my-1"
+        className="resize-none rounded-md w-2/3 my-2"
       ></textarea>
-      <div className="flex w-full justify-around">
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <p>Toggle Product Size</p>
+      <div className="flex w-2/3 justify-around">
+        <div className="flex flex-col w-full">
+          <div className="flex text-start">
+            <p>Toggle Product Size&nbsp;</p>
             <input type="checkbox"></input>
           </div>
         </div>
@@ -48,16 +51,17 @@ function AddProduct() {
                 }
               }}
             >
-              Add Color
+              Add
             </button>
           </div>
           <div id="colors" className="flex absolute bottom-0"></div>
         </div>
       </div>
+
       <input
         type="file"
-        className="w-full"
         accept="image/png, image/jpeg"
+        className="w-3/4"
         onChange={(e) => {
           const img = e.target.files[0];
           if (img) {
@@ -66,11 +70,13 @@ function AddProduct() {
           }
         }}
       ></input>
-      <input
-        type="submit"
-        className="bg-black text-white p-2 rounded-lg hover:cursor-pointer active:hover:scale-95"
-        value="Add Product"
-      ></input>
+      <div className="flex justify-end w-full p-4">
+        <input
+          type="submit"
+          className="bg-black text-white p-2 rounded-lg hover:cursor-pointer active:hover:scale-95"
+          value="Add Product"
+        ></input>
+      </div>
     </div>
   );
 }
