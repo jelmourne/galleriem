@@ -3,7 +3,7 @@ import "../index.css";
 
 function Navbar() {
   return (
-    <nav className="bg-secondary flex justify-center p-3">
+    <nav className="bg-secondary flex justify-center p-3 z-50">
       <ul className="flex justify-between w-10/12 items-center">
         <li>
           <Link to={"/"} className="flex justify-between">
