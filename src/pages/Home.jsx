@@ -9,32 +9,35 @@ function Home() {
     <>
       <Navbar />
       <div className="bg-primary">
-        <Carousel
-          className="flex mx-10 scale-90"
-          autoPlay
-          infiniteLoop
-          centerMode
-          showThumbs={false}
-          showStatus={false}
-          interval={4000}
-        >
-          <img
-            className="aspect-square object-cover"
-            src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
-          ></img>
-          <img
-            className="aspect-square object-cover"
-            src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
-          ></img>
-          <img
-            className="aspect-square object-cover"
-            src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
-          ></img>
-          <img
-            className="aspect-square object-cover"
-            src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
-          ></img>
-        </Carousel>
+        <div className="flex justify-center">
+          <Carousel
+            className="aspect-auto w-3/4 m-2"
+            autoPlay
+            infiniteLoop
+            centerMode
+            showThumbs={false}
+            showStatus={false}
+            interval={4000}
+          >
+            <img
+              className="aspect-square object-cover"
+              src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
+            ></img>
+            <img
+              className="aspect-square object-cover"
+              src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
+            ></img>
+            <img
+              className="aspect-square object-cover"
+              src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
+            ></img>
+            <img
+              className="aspect-square object-cover"
+              src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D"
+            ></img>
+          </Carousel>
+        </div>
+
         <div className="bg-green flex justify-center">
           <img
             src="./Logo.jpg"

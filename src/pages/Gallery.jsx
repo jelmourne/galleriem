@@ -25,6 +25,22 @@ function Gallery() {
             change={changeImg}
             img="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
           />
+          <ItemGallery
+            change={changeImg}
+            img="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+          />
+          <ItemGallery
+            change={changeImg}
+            img="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+          />
+          <ItemGallery
+            change={changeImg}
+            img="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+          />
+          <ItemGallery
+            change={changeImg}
+            img="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+          />
         </div>
         {open && (
           <div
