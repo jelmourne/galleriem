@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import CartItem from "./CartItem";
+import CartItem from "./ItemCart";
 
 function Order(props) {
   //props = order id

@@ -16,7 +16,7 @@ function Admin() {
       <nav className="bg-secondary">
         <ul className="flex justify-between p-3 items-center">
           <li>
-            <Link to={"/"} className="mx-10 text-green text-2xl">
+            <Link to={"/"} className="mx-10 text-green font-light text-2xl">
               GallerieM
             </Link>
           </li>

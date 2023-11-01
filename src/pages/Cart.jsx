@@ -1,6 +1,6 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
-import CartItem from "../components/CartItem";
+import CartItem from "../components/ItemCart";
 function Cart() {
   return (
     <>
